@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Code Quiz Application</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="./highscore.html" class="highscore-link">HighScores</a>
+      </nav>
+      <span class="countdown" id="countdown">Timer : 0</span>
+    </header>
+    <div class="quizRules">
+      <h1>Code Quiz Challenge</h1>
+      <p>
+        Try to answer the following code related questions within the time
+        limit.<br />
+        Keep in mind that incorrect anwers will penalize your score/time<br />
+        by ten seconds
+      </p>
+      <hr />
+      <button type="button" class="startQuizBtn">Start Quiz</button>
+    </div>
+    <div class="quizQuestions">
+      <section class="quesSection">
+        <div class="questionText">
+          <!-- Here I've inserted question from JavaScript -->
+        </div>
+        <div class="optionList">
+          <!-- Here I've inserted options from JavaScript -->
+        </div>
+      </section>
+    </div>
+    <div class="inputResult hidden">
+      <h2>All Done !!</h2>
+      <h3 class="finalScoreH3"></h3>
+      <form action="./highscore.html">
+        <label for="fname">Enter Initials</label>
+        <input type="text" id="fname" name="fname" />
+        <input id="end-quiz" type="submit" value="Submit" />
+      </form>
+    </div>
+
+    <script src="./assets/js/questions.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

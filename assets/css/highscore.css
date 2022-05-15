@@ -1,0 +1,46 @@
+body {
+    font-family: sans-serif;
+    background-color: #181815;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+    position: relative;
+    color: rgb(246, 222, 239);
+  }
+  h1{
+      font-family: 'Times New Roman', Times, serif;
+      font-weight:bolder;
+  }
+  button{
+    margin:10px;
+    background-color:rgb(246, 222, 239);
+    border:#f3efef;
+    border-radius: 20px;
+    color: rgb(43, 2, 2);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: solid;
+    display: inline-block;
+    font-size: 20px;
+}
+ol {
+    margin: 4% auto ;
+    background: #ff9999;
+    max-width: fit-content;
+    padding: 20px;
+    border: 2px solid #e02e78;
+    border-radius: 5px;
+  }
+  ol li {
+    background: #ffe5e5;
+    color: darkred;
+    padding: 8px 15px;
+    margin:15px;
+    border: 2px solid #e02e78;
+    border-radius: 5px;
+    font-size:large;
+  }
+  div{
+      font-size: 25px;
+      margin: 5px;
+  }
