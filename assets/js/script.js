@@ -1,19 +1,18 @@
 var timerEl=document.getElementById('countdown');
 var startQuizBtn=document.querySelector('.startQuizBtn');
 var info_box= document.querySelector('.quizRules');
-// var answerDiv=document.querySelector('.answer');
 var quizQuesDiv=document.querySelector('.quizQuestions');
 var optionList = document.querySelector(".optionList");
 var inputResultsDiv=document.querySelector('.inputResult');
-var question_length=questions.length;
 var nameInitial=document.getElementById("fname");
 var scoreH2=document.querySelector('.scoreH2');
 var finalScoreH3=document.querySelector('.finalScoreH3');
 var quesSection=document.querySelector('.quesSection');
+var doneBtn=document.createElement('button');
+var question_length=questions.length;
+
 var timeScore;
 var timeInterval;
-var doneBtn=document.createElement('button');
-console.log(">>>question length is",question_length);
 let index=0;
 let que_count=0;
 let userScore =0;
@@ -30,7 +29,6 @@ doneBtn.addEventListener('click',function(){
 function inputResults(userScore)
 {
   document.getElementById('end-quiz').addEventListener('click', function() {
-    console.log(">>>check input result function");
     var storage = JSON.parse(localStorage.getItem('userScoreLocal'))
     if (storage === null) {
       storage = []
@@ -46,8 +44,6 @@ function inputResults(userScore)
 }
 
 
-
-
 var answerDiv=document.createElement('div');
 answerDiv.setAttribute('class','answer');
 var lineDraw=document.createElement('hr');
@@ -59,16 +55,9 @@ function optionSelected(answer){
     const allOptions = optionList.children.length; //getting all option items
     console.log(">>>user ans is:",userAns);
     console.log(">>>correct ans is:",correcAns);
-  
-
-
     if(userAns == correcAns){ //if user selected option is equal to array's correct answer
-        //userScore += 1; //upgrading score value with 1
-        console.log("Correct Answer");
-       // console.log("Your correct answers = " + userScore);
         answerDiv.innerHTML="Correct!!";
     }else{
-        console.log("Wrong Answer");
         timeLeft-=10;
         answerDiv.innerHTML="Wrong!!";
     }
@@ -77,12 +66,10 @@ function optionSelected(answer){
   showQuetions();
 }
 // getting questions and options from array
-
 doneBtn.setAttribute('type','button');
 doneBtn.setAttribute('class','doneBtn');
 doneBtn.innerHTML="Done";
 function showQuetions(){
-  console.log(">>> check 1");
   const que_text = document.querySelector(".questionText");
   if(question_length>0)
   {
@@ -98,19 +85,15 @@ function showQuetions(){
       const option = optionList.querySelectorAll(".option");
       // set onclick attribute to all available options
       for(i=0; i < option.length; i++){
-        console.log(">>> check 2");
         option[i].setAttribute("onclick", "optionSelected(this)");
       }
       question_length--;
 
   }else{
-    
     timeScore=timeLeft;
-    console.log(">>>time left",timeScore);
     timerEl.textContent = 'Timer : '+timeLeft;
     clearInterval(timeInterval);
     quesSection.append(doneBtn);
-    
   }
 }
 function countdown() {
@@ -125,8 +108,7 @@ function countdown() {
       timeLeft--;
     }
     else {
-      timeScore=timeLeft;
-    console.log(">>>time left",timeScore);
+    timeScore=timeLeft;
     timerEl.textContent = 'Timer : '+timeLeft;
     clearInterval(timeInterval);
     quesSection.append(doneBtn);
