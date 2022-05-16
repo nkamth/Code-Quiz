@@ -1,42 +1,32 @@
-# 04 Web APIs: Code Quiz
+# Web APIs: Code Quiz :
 
-As you proceed in your career as a web developer, you will probably be asked to complete a coding assessment, which is typically a combination of multiple-choice questions and interactive challenges. For this challenge, you will build a timed code quiz that's made up of multiple-choice questions. This app will run in the browser and feature dynamically updated HTML and CSS powered by your JavaScript code. It will also feature a clean and polished user interface and be responsive, ensuring that it adapts to multiple screen sizes.
+Created an application for coding assessment, with timed code quiz that's made up of multiple-choice questions. The app runs in the browser and features dynamically updated HTML and CSS powered by my JavaScript code. It has a clean and polished user interface and is responsive, which ensures that it adapts to multiple screen sizes.
 
-## User Story
+## Description :
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+This application is made for user to take a timed quiz on JavaScript fundamentals that stores high scores SO THAT user can gauge his/her progress compared to peers.
 
-## Acceptance Criteria
+## Acceptance Criteria :
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the Start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and score
-```
+- WHEN the Start button is clicked THEN a timer starts and User is presented with a question.
+- WHEN User answer a question THEN User is presented with another question.
+- WHEN User answer a question incorrectly THEN time is subtracted from the clock.
+- WHEN all questions are answered or the timer reaches 0 THEN the game is over.
+- WHEN the game is over THEN User is asked to enter initials.
+- WHEN User submit the result THEN initial and score is stored in local storage.
+- WHEN data is stored in local storage THEN a new page is loaded with all the scores.
+- WHEN highscore page is loaded THEN User can go back to main page to retake quiz or clear all the highscore from local storage.
 
-The following animation demonstrates the application functionality:
+## GitHub Repo URL :
 
-![Demonstration of the Coding Quiz Challenge.](./Assets/04-web-apis-homework-demo.gif)
+## Deployed URL :
 
-### Review
-
-You are required to submit the following for review:
-
-* The URL of the functional, deployed application.
-
-* The URL of the GitHub repository. Give the repository a unique name and include a README describing the project.
+## Screenshot :
 
 ---
+
 © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+
+```
+
+```
