@@ -19,9 +19,15 @@ This application is made for user to take a timed quiz on JavaScript fundamental
 
 ## GitHub Repo URL :
 
+https://github.com/nkamth/Code-Quiz
+
 ## Deployed URL :
 
+https://nkamth.github.io/Code-Quiz/
+
 ## Screenshot :
+
+<img width="1280" alt="Screen Shot 2022-05-15 at 11 23 47 PM" src="https://user-images.githubusercontent.com/97250880/168514717-192b367e-fc6e-4493-a286-27e43303fb4c.png">
 
 ---
 
